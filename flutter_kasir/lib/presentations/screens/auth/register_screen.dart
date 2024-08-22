@@ -79,7 +79,7 @@ class RegisterScreen extends StatelessWidget {
                       MainElevatedButton(
                           text: 'Login',
                           onPressed: () {
-                            context.goNamed(RoutesName.register.name);
+                            context.goNamed(RoutesName.login.name);
                           }),
                     ],
                   )

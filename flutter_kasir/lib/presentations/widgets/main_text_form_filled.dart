@@ -13,6 +13,7 @@ class MainTextFormField extends StatefulWidget {
     this.hintText,
     this.onTap,
     this.suffixIcon,
+    this.validator,
   });
 
   final FocusNode focusNode;
@@ -25,6 +26,7 @@ class MainTextFormField extends StatefulWidget {
   final String? hintText;
   final Function()? onTap;
   final Widget? suffixIcon;
+  final String? Function(String?)? validator;
 
   @override
   State<MainTextFormField> createState() => _MainTextFormFieldState();
@@ -36,6 +38,7 @@ class _MainTextFormFieldState extends State<MainTextFormField> {
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      validator: widget.validator,
       keyboardType: widget.keyboardType,
       focusNode: widget.focusNode,
       controller: widget.controller,

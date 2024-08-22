@@ -3,7 +3,7 @@ enum RoutesName {
   login('login'),
   register('register'),
   forgotPassword('forgot-password'),
-  dashboard('dashboard'),
+  dashboard('/dashboard'),
 
   //
   home('/home'),
